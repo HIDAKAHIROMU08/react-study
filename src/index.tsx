@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Test } from "./components/pages/Test";
 //import User from "./components/pages/Columns";
 import { UserData } from "./components/pages/UserData";
+import { CreateUserData } from "./components/pages/CreateUserData";
 
 const rootElement = document.getElementById("root");
 render(
@@ -14,6 +15,7 @@ render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<UserData />} />
+        <Route path="/CreateUserData" element={<CreateUserData />}/>
         <Route path="test" element={<Test />} />
       </Routes>
     </BrowserRouter>
